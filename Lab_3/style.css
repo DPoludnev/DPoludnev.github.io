@@ -25,7 +25,7 @@ html, body {
   
   p, input, li {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #0d52bb;
+    color: #010307;
   }
   
   h1 {
@@ -62,7 +62,7 @@ html, body {
   }
   
   main, header, nav, article, aside, footer, section {
-    background-color: rgba(0,255,0,0.5);
+    background-color: rgba(48, 20, 202, 0.5);
     padding: 1%;
   }
   

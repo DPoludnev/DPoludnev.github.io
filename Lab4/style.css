@@ -1,0 +1,108 @@
+html {
+  background-color: D41E30;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.wrapper {
+  width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* Flex Box papameters */
+.flexbox-container {
+  height: 800;
+  display: flex;
+  justify-content: center;
+}
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid #333;
+  background-color: #F57C64;
+}
+
+.flexbox-item-1 {
+  min-height: 200px;
+  min-width: 760px;
+  position: center;
+  align-items: center;
+}
+
+.flexbox-item-2 {
+  min-height: 300px;
+  flex-grow: 1;
+  flex-shrink: 3;
+  align-self: center;
+}
+
+/* Font */
+h1  {
+  font-family: 'Sansita Swashed', cursive;
+  color: #dfb3b3;
+}
+p, input, li {
+  font-family: 'Lobster', Cyreal;
+  color: #010307;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+h2 {
+  color: #292A1E;
+  font-size: 1rem;
+  text-align: center;
+  position: center;
+  text-indent: 0%;
+}
+h3 {
+  color: #292A1E;
+  font-size: 1rem;
+  text-align: left;
+}
+/* Header */
+.header {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-left: 20pt;
+  padding-right: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+body > * {
+  background-color: red;
+  padding: 1%;
+}
+.header img {
+  display: inline-block;
+  height: 60px;
+  padding-top: 15.15px;
+  position: absolute;
+  top: 0;
+  right: 10;
+  height: 140px;
+  width: 150px;
+}
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+.img {
+  position: right;
+
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}

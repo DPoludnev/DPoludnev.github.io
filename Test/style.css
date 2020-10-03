@@ -20,7 +20,7 @@
     width: 160px
 }
 .wrapper{
-    position: absolute;
+    position: left;
     top: 10em;
     left: 8em;
     width: 25em;
@@ -28,7 +28,6 @@
     font-size: 16px;
     border-image-width: 25em;
 }
-
 ul {
     /*list-style-type:none;
     border:1px dotted rgb(240, 233, 233);

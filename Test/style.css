@@ -20,7 +20,7 @@
     width: 160px
 }
 .wrapper{
-    position: left;
+    position: absolute;
     top: 10em;
     left: 8em;
     width: 25em;

@@ -27,7 +27,7 @@ mp2.innerText = "The 3rd letter of name is " + thirdChar
 mp2.innerText = "The 3rd letter of my name is " + thirdChar + ". \n"
 // 7 Return the final three characters of your last name to that new line
 const lastChars = myFullName.substring(myFullName.length - 3, myFullName.length);
-mp2.innerText = "The 3rd letter of my name is " + thirdChar + ". \n" + "The last 3 letters of my name are: " + lastChars;
+mp2.innerText = thirdChar + ": is the third letter of my first name" +". \n" + "The last 3 letters of my  last name are: " + lastChars.toUpperCase(lastChars);
 // 8 Substring your first and last name into two separate variables
 const firstN = myFullName.substring(0,6);
 const lastN = myFullName.substring(7,15);

@@ -7,20 +7,22 @@ name.innerText = myFullName + "'s Lab 4.";
 const paragraph = document.querySelector(".content");
 
 const mp1 = document.createElement("p");
-mp1.className = "one";
+mp1.className = "content1";
 mp1.innerText = "Hello wolrd!";
 paragraph.appendChild(mp1);
 
 const mp2 = document.createElement("p");
-mp2.className = "two"
+mp2.className = "content2"
 mp2.innerText = "Hello back at you!";
 paragraph.appendChild(mp2);
 // 3 Into the first paragraph, insert the phrase "my name has " length of your name " characters"
 //      (e.g. my name has 10 characters).
+const getmp1 = document.querySelector(".content1")
 let length = myFullName.length - 1
 mp1.innerText = "My name has " + length + " characters.";
 // 4 & 5 Into the second paragraph tag, return the 3rd character in your first name
-const thirdChar = myFullName[2].toUpperCase();
+const getmp2 = document.querySelector(".content2")
+let thirdChar = myFullName[2].toUpperCase();
 
 mp2.innerText = "The 3rd letter of name is " + thirdChar
 // 6 Add a new line to your second paragraph

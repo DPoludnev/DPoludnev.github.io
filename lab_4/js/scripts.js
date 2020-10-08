@@ -36,4 +36,4 @@ const lastN = myFullName.substring(7,15);
 // 9 Add the total length of your first and last names together
 const total = firstN.length + lastN.length;
 // 10 Display that total next to your name in your header
-document.querySelector(".header").append(" There are " + total + " letters in my first and last name");
+document.querySelector(".header").append(" There are " + total + " letters in my Full Name.");

@@ -10,7 +10,6 @@
     font-weight: bold;
 
 }
-
 /*Header*/
 div.header {
     height: 10em;
@@ -23,4 +22,7 @@ div.header {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) 
+}
+.body {
+    position: absolute;
 }

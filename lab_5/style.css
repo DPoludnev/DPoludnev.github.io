@@ -1,0 +1,26 @@
+.countries {
+    font-weight: normal;
+}
+
+.country-name {
+    font-weight: normal;
+}
+
+.country-code {
+    font-weight: bold;
+
+}
+
+/*Header*/
+div.header {
+    height: 10em;
+    position: relative }
+div.header {
+    margin: 0;
+    background: rgba(214, 5, 5, 0.959);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}

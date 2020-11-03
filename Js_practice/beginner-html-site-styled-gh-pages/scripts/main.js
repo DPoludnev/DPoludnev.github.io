@@ -13,3 +13,6 @@ myImage.onclick = function() {
       myImage.setAttribute('src','images/firefox-icon.png');
     }
 }
+
+const test = "6";
+console.log(typeof test);

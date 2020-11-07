@@ -28,13 +28,13 @@ function getBusRoute() {
           message =
             sessionStorage.getItem("title") +
             " <br>Lat max : " +
-            sessionStorage.getItem("latMax") +
+            sessionStorage.getItem("Max_lat") +
             " <br>Lat min : " +
-            sessionStorage.getItem("latMin") +
+            sessionStorage.getItem("Min_lat") +
             " <br>Lon Max : " +
-            sessionStorage.getItem("lonMax") +
+            sessionStorage.getItem("Max_lon") +
             " <br>Lon Min :" +
-            sessionStorage.getItem("lonMin");
+            sessionStorage.getItem("Min_lon");
             
       }
       else {

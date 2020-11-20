@@ -14,6 +14,18 @@ async function getData() {
             let listSize = json.data.children.length;
             // Loop to pick 5 random entries
             for (x = 0; x < 5; x++) {
+                let redditList = document.querySelector("redditList");
+                let rdm = math.floor((Math.random() * listSize));
+                let title = json.data.children[rdm].data.title;
+                let subreddit = json.data.children[rdm].data.subreddit;
+                let authot = json.data.children[rdm].data.author;
+                let ups = json.data.children[rdm].data.ups;
+
+                let message = "<b>Subreddit </b>:" + subreddit + 
+                "<b> Author</b>:" + author + 
+                "<b>Title</b>:" + title + 
+                "<b>Upvotes <b/>:" + ups;
+
                 /*
                     Get a random number within the size of the list
                     Get subreddit, author, title, and ups from record
@@ -23,15 +35,15 @@ async function getData() {
                     Add a data entry to chartValues with author as the label and ups as the y component
                 */
     
-
+                redditList.innerHTML += "<li>" + message + "</li>";
                 /*.......*/
                 
                 let addToChart = {'label':author,y:ups}; // Gave this. This needs to be added to the 'chartValues'
-                /*.......*/
+                chartValues.push(addToChart);/*.......*/
             }
         })
         .then(values => console.log(chartValues));
-        //chart.render(); // Do you need to remove the comments from here in order to get it to work?
+        chart.render(); // Do you need to remove the comments from here in order to get it to work?
 };
 
 window.onload = async function makeChart() {
@@ -45,7 +57,7 @@ window.onload = async function makeChart() {
             { 
                 type: "column",
                 name: "Popular Reddit",
-                dataPoints: // WHAT GOES HERE???
+                dataPoints: chartValues
             }
         ]
     });

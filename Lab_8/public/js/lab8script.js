@@ -32,8 +32,8 @@ async function getData() {
                 let ups = post.ups;
 
                 let message = "<b>Subreddit </b>: " + subreddit + 
-                " <b>Author</b>:" + author + 
-                " <b>Title</b>:" + title + 
+                " <b>Author</b>: " + author + 
+                " <b>Title</b>: " + title + 
                 " <b>Up votes</b>: " + ups;
 
                 let select = document.getElementById("redditList");
